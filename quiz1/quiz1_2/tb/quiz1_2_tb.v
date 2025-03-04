@@ -1,8 +1,10 @@
 module quiz1_2_tb();
 
-localparam period = 2;
-localparam test_period = 12;
-localparam pattern = 12'b0000_0010_1001;
+// ****** Change The Parameters Here ****** //
+localparam period = 2; //chose any even number
+localparam test_period = 12; // 8 (tital 8 bits) + 4 (extra 4 bits from reg B)
+localparam pattern = 12'b0000_0010_1001; // test pattern 0000_num1_num2
+// ****** Change The Parameters Here ****** //
 
 wire [3:0] golden = pattern[3:0] + pattern[7:4];
 
