@@ -36,7 +36,7 @@ always @(*) begin
   end
 
   if (state == `LOAD) begin
-    input_register_n[7-load_position] = code_in; // Road the code from high to low <- (7-load position)
+    input_register_n[7-load_position] = code_in; // Load the code from high to low <- (7-load position)
   end
 end
 
